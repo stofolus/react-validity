@@ -1,0 +1,46 @@
+:root {
+  --color-black: hsl(0, 0%, 0%);
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: rgba(255, 255, 255, 0.96);
+  background-color: var(--color-black);
+}
+
+.example-page {
+  width: 100%;
+  max-width: 600px;
+  margin: 48px auto 0 auto;
+}
+
+.example-page label,
+.example-page input {
+  display: block;
+  width: 100%;
+}
+
+.example-page input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid hsla(0, 0%, 100%, 0.8);
+  background-color: var(--color-black);
+  color: #fff;
+  font-weight: 600;
+}
+
+.example-page .text-input {
+  width: 100%;
+}
+
+.example-page .text-input label {
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.example-page .text-input .error-list {
+  min-height: 24px;
+  padding: 4px 0;
+}
