@@ -43,6 +43,12 @@ export const Form: FunctionComponent<Props> = React.memo(
     return (
       <form onSubmit={internalOnSubmit} {...props}>
         <FormContext.Provider value={{ setInput, wasSubmitted }}>
+          {/**
+           * We should probably use a component with React.memo here as a kind of
+           * re-render protection which till prevent any updates from this component
+           * to propagate further down the tree. This should help immensely with
+           * re-renders
+           */}
           {children}
         </FormContext.Provider>
       </form>

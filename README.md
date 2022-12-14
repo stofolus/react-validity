@@ -7,3 +7,4 @@
 - `useValidation` and `<Form>` should only create the absolute minimum amount of re-renders
 - Everything should have tests
 - There should be a reactive API for building accessable components like an error list
+- `useValidation` will only be async if has async validators. This will decrease the number of re-renders and prevent unnecessary pending states in the components
